@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roihan Downloader</title>
+    <link rel="icon" href="assets/profile.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER dengan Foto Profil -->
+        <header class="profile-header">
+            <div class="profile-avatar-wrapper">
+                <img 
+                    src="assets/https://cdn.imagetourls.com/uploads/tyImg/VxVReUc0.jpg" 
+                    alt="Profile" 
+                    class="profile-avatar"
+                    onerror="this.src='https://ui-avatars.com/api/?name=Roihan&background=007bff&color=fff&size=200'"
+                >
+                <div class="online-indicator"></div>
+            </div>
+            <h1>Roihan Downloader</h1>
+            <p class="tagline">Unduh Video TikTok & Instagram Gratis</p>
+        </header>
+
+        <!-- Input Form -->
+        <div class="downloader-box">
+            <div class="input-group">
+                <i class="fas fa-link input-icon"></i>
+                <input 
+                    type="text" 
+                    id="videoUrl" 
+                    placeholder="Tempel tautan TikTok atau Instagram..."
+                >
+            </div>
+            <button onclick="downloadVideo()" id="downloadBtn">
+                <i class="fas fa-download"></i> Unduh Sekarang
+            </button>
+        </div>
+
+        <!-- Hasil -->
+        <div class="result" id="result"></div>
+
+        <footer class="footer">
+            <p>© 2024 <strong>Roihan Downloader</strong> • All rights reserved</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
